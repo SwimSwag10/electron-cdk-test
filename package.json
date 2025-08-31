@@ -1,0 +1,37 @@
+{
+  "name": "camera-control-test",
+  "version": "1.0.0",
+  "description": "Simple camera control test for Brio 4K",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "electron ./dist/main.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "camera",
+    "webcam",
+    "recording"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.6",
+    "@types/fluent-ffmpeg": "^2.1.24",
+    "@types/node": "^20.10.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.879.0",
+    "@types/electron": "^1.6.12",
+    "aws-sdk": "^2.1400.0",
+    "chalk": "^4.1.2",
+    "cross-spawn": "^7.0.6",
+    "dotenv": "^17.2.1",
+    "electron": "^37.4.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "node-webcam": "^0.8.0",
+    "systeminformation": "^5.21.0"
+  }
+}
