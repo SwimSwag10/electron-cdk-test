@@ -1,0 +1,14 @@
+node_modules
+package-lock.json
+cdk.out
+.**
+!.gitignore
+
+recordings/**.mp4
+recordings/**.mp3
+recordings/**.png
+recordings/**.jpeg
+
+**/config/aws.json
+dist
+outputs.json
