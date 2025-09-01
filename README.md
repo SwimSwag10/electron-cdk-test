@@ -2,12 +2,19 @@
 
 ## AWS Upload Integration
 
-### Prerequisites
-- AWS credentials must be provided via environment variables or AWS profile (never hardcoded).
-- Required environment variables:
-  - `AWS_ACCESS_KEY_ID`
-  - `AWS_SECRET_ACCESS_KEY`
-  - `AWS_REGION` (default: us-east-2)
+### Setup Guide
+- This is program is Windows specific. Make sure you are running on a Windows 64x machine.
+- Required IAM user. You need to create a new IAM user inside of the AWS console. Make sure you give it CLI access.
+- Create an access key for the IAM user. Make sure to copy the secret key, and the public key.
+- Create a .env file in the root, and copy from the `.example.env`.
+- Make sure to install ffmpeg. Visit the official page to do so.
+- Install dependencies:
+```shell
+npm i
+cd cdk
+npm i
+```
+
 
 ### How Upload Works
 - After each recording, the Electron app automatically uploads the video file to the specified S3 bucket using the AWS SDK v3.
