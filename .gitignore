@@ -12,6 +12,8 @@ recordings/**.jpeg
 **/config/aws.json
 dist
 outputs.json
+color/
+infra/
 
 # .NET
 **.exe
